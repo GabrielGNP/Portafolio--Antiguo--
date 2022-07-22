@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <title> Portafolio Gabriel Nicolás Perero</title>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="functs.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="Title">
+            <h1 id="titleh1"> Este es mi portafolio</h1>
+            <div style="text-align: center;">
+                Vienvenidos a mi web ya sea por inspiración, una publicación específica, 
+                información sobre mi, busqueda de algún medio de contacto o casualidad al encontrar esta página.
+            </div>
+        </div>
+        <div id="OptionsContents">
+            <fieldset id="ChecksOPCont">
+                <label class="LabelOPCont" >
+                    <input type="radio" class="RadOPCont" id="CheckOP0" name="OPCont" style="visibility:hidden" onclick="ChecksOPCont(0)"> Biografía
+                </label>
+                <label class="LabelOPCont" >
+                    <input type="radio" class="RadOPCont" id="CheckOP1" name="OPCont" style="visibility:hidden" onclick="ChecksOPCont(1)"> Aplicaciones
+                </label>
+                <label class="LabelOPCont" >
+                    <input type="radio" class="RadOPCont" id="CheckOP2" name="OPCont" style="visibility:hidden" onclick="ChecksOPCont(2)"> Contactos
+                </label>
+                <label class="LabelOPCont" >
+                    <input type="radio" class="RadOPCont" id="CheckOP3" name="OPCont" style="visibility:hidden" onclick="ChecksOPCont(3)"> Blog
+                </label>
+            </fieldset>
+        </div>
+    </header>
+
+    <section id="ContenedorPrincipal">
+        <h1> Gracias por mirar mi web, espero que le resulte de agrado</h1>
+        <div id="FirstContainer">
+            <div>Esta es la ventana principal, como puede ver no hay mucho contenido, </div>
+            <div>esto lo hago para no mostrar información que no quiera ver.</div>
+            <div>Puede ver la información pulsando en los botónes que puede encontrar en la parte superior (lo que va a cambiar el contenido que está leyendo ahora mismo)</div>
+            <div>o tambien puede presionar algúnos de los siguientes botones (que hacen exactamente lo mismo que los botones de la parte superior).</div>
+            
+            <div style="align-items:center; width: 100%; display: inline-block;">
+                <button class="ButOPCont" style="width: 100px;" onclick="ActOPCont(0)"> Biografía</button>
+                <button class="ButOPCont" style="width: 100px;" onclick="ActOPCont(1)"> Aplicaciones</button>
+                <button class="ButOPCont" style="width: 100px;" onclick="ActOPCont(2)"> Contactos</button>
+                <button class="ButOPCont" style="width: 100px;" onclick="ActOPCont(3)"> Blog</button>
+            </div> 
+        </div>
+
+        <div id="Biografía" style="visibility: hidden;">
+            <div>A completar</div>
+        </div>
+        <div id="Aplicaciones" style="display: flex; justify-content: center; visibility: hidden;">
+        <!--<table style=" width: 80%; height: 100px;">
+            <tr >
+                <td style="background:rgb(150, 21, 167);">
+                    <img src="imgs/SIC/1.png" style="width: 394.5px; height: 347px;">
+                </td>
+                <td style="background:green;">
+                    
+                </td>
+                <td style="background:rgb(150, 21, 167);">
+                    <img src="imgs/SIC/1.png" style="width: 394.5px; height: 347px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="background:green ;"></td>
+                <td style="background:rgb(150, 21, 167) ;"></td>
+                <td style="background:green ;"></td>
+            </tr>
+        </table>
+        </div>
+        <div>-->
+            <div style="background: rebeccapurple; width: 400px; height: 352px; margin: 20px;">
+                <img src="imgs/SIC/1.png" style="width: 394.5px; height: 347px;">
+            </div>
+            <div style="background: rebeccapurple; width: 400px; height: 352px; margin: 20px;">
+                <img src="imgs/SIC/1.png" style="width: 394.5px; height: 347px;">
+            </div>
+        </div>
+
+        <div id="Contactos" style="visibility: hidden;">
+            <div>A completar</div>
+        </div>
+        <div id="Blog" style="visibility: hidden;">
+            <div>A completar</div>
+        </div>
+    </section>
+    
+</body>
