@@ -42,9 +42,11 @@ function ChecksOPCont(OP){
     document.getElementById("dialogBio1").open = true;
     document.getElementById("dialogBio2").open = true;
     document.getElementById("dialogBio3").open = true;
+    document.getElementById("dialogBio4").open = true;
     OpenDialog("dialogBio1");
     OpenDialog("dialogBio2");
     OpenDialog("dialogBio3");
+    OpenDialog("dialogBio4");
     switch(opSel){
         case -1:
             switch (OP){
@@ -342,4 +344,67 @@ function rotate(id){
         //KITrotate(id);
         id.style.animation = "";
     },1001); 
+}
+/*
+function ShowPDF(Obj){
+    if (!document.getElementById("DivDiploma")){
+        var NewIMG = document.createElement("img");
+        NewIMG.src = "Files/Diploma Git y GitHub.png";
+        NewIMG.style = "height: 50px;";
+
+        var NewDIV = document.createElement("div");
+        NewDIV.id = "DivDiploma";
+        NewDIV.appendChild(NewIMG);
+        console.log(Obj);
+        Obj.appendChild(NewDIV);
+    }
+    
+}*/
+
+
+function showProyect(){
+    var Mens = document.createElement("div");
+    var MensSup = document.createElement("div");
+    MensSup.style = "height: 30px; width:100%; background:green; text-align: right";
+
+    var ButX= document.createElement("button");
+    ButX.textContent = "X";
+    ButX.style = "margin: 0px; border: 0px; height: 100%; background: transparent";
+    ButX.onclick = "DeleteHTML('MensInf')";
+    MensSup.appendChild(ButX);
+
+    var MensText= document.createElement("div");
+    MensText.style = "height: 50px; width:100%";
+    MensText.textContent = "Aun no tengo una presentación visual de este proyecto";
+
+    Mens.id = "MensInf";
+    Mens.style = "height: 150px; width:400px; position: absolute; top: 50%; left: 35%; background: grey;";
+    Mens.appendChild(MensSup);
+    Mens.appendChild(MensText);
+    //document.getElementById("ContenedorPrincipal").appendChild(Mens);
+
+    var plantilla = 
+    '<div id="MensInf" style="height: 150px; width:400px; position: absolute; top: 50%; left: 35%; background: #373737;">'+
+        '<div style="height: 30px; width:100%; background:linear-gradient(180deg, #181818, #373737); text-align: right">'
+            +'<button class="ButOPCont" style="margin: 0px; border: 0px; height: 100%; background:transparent;" onclick="DeleteHTML(`MensInf`)"> X</button>'
+        +'</div>'
+        +'<div style="text-align:center; padding-top: 20px;">Aun no tengo una presentación visual de este proyecto</div>'
+    +'</div>';
+    
+    var block = '<div id="displayblack" style=" position:absolute; top:0px; background : #181818d9; height: '+(document.getElementById("totalDocument").clientHeight+100).toString()+"px"+'; width:100%"></div>';
+    
+    document.getElementById("totalDocument").insertAdjacentHTML("beforeend", block) ;
+    document.getElementById("totalDocument").style.overflow = "hidden";
+    document.getElementById("displayblack").insertAdjacentHTML("beforeend", plantilla) ;
+    
+    
+}
+
+function DeleteHTML(ObjId){
+    console.log(document.getElementById(ObjId));
+    document.getElementById(ObjId).remove();
+    if (!!document.getElementById("displayblack")){
+        document.getElementById("displayblack").remove();
+        document.getElementById("totalDocument").style.overflow = "";
+    }
 }

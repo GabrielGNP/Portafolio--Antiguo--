@@ -9,7 +9,7 @@
     <script src="functs.js"></script>
 </head>
 
-<body>
+<body id="totalDocument">
     <header>
         <div id="Title">
             <h1 id="titleh1"> Este es mi portafolio</h1>
@@ -61,6 +61,83 @@
                 <br>Nací en Córdoba capital (Argentina), a los 5 años me mudé a Entre Ríos donde habito actualmente. Vivo en un pueblito, no muy grande pero se podría decir que nunca me faltaron cosas, y no, no ando montando vacas.
             </div>
             <br><br>
+            <div><h3 id="TitBio4" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio4')" onmouseleave="BtnLeave('TitBio4')" onclick="OpenDialog('dialogBio4')"> Mis conocimientos y habilidades</h3></div>
+            <div id="divDialog4" class="divBio" style="height:0px; transition-duration: 1s; animation-duration: 1s;">
+                <dialog id="dialogBio4"  style="background: transparent; color: #c6c6c6; border:0px; ">
+                    <div style="display: flex; border-top: 1px solid rgba(104, 255, 255, 0.3); border-bottom: 1px solid rgba(104, 255, 255, 0.3); overflow-x: overlay;">
+                        <div style="width: 200px;">Lenguajes de programación</div>
+                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/c++.png" style="height: 50px;" onmouseover="rotate(this);" > <br>C++</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/c-sharp.png" style="height: 50px;" onmouseover="rotate(this);"> <br>C#</div> 
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/php.png" style="height: 50px;" onmouseover="rotate(this);"> <br>PHP</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/SQL.png" style="height: 50px;" onmouseover="rotate(this);"><br> SQL</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; overflow-x: overlay; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">    
+                        <br>
+                        <div style="width: 200px;">herramientas</div>
+                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Git.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Git</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/GitHub.png" style="height: 50px;" onmouseover="rotate(this);"> <br>GitHub</div>  
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/docker.png" style="height: 50px;" onmouseover="rotate(this);"><br> Docker</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Visual Studio Code.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Visual Studio Code</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Visual Studio.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Visual Studio</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/diagrams.png" style="height: 50px;" onmouseover="rotate(this);"><br> Diagrams.net</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/mysql.png" style="height: 80px;" onmouseover="rotate(this);"><br> MySql</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; overflow-x: overlay; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">  
+                        <br> <div style="width: 200px;">Aplicaciones Microsoft</div>
+                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/word.png" style="height: 50px;" onmouseover="rotate(this);"><br> Microsoft Word </div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/excel.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Microsoft Excel</div> 
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/microsoft-access.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Microsoft Acces</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/powerpoint.png" style="height: 50px;" onmouseover="rotate(this);"><br> Microsoft PowerPoint</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; overflow-x: overlay; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">
+                        <br> <div style="width: 200px;">Documentos Google</div>
+                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/docs.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Google Docs</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/sheets.png" style="height: 50px;" onmouseover="rotate(this);"><br> Google Sheets</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/google-forms.png" style="height: 50px;" onmouseover="rotate(this);"><br> Google Forms </div>
+                        </div>
+                        <br>
+                    </div> 
+                    <div style="display: flex; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">
+                        <br> <div style="width: 200px;">Lenguajes y Herramientas de desarrollo web</div>
+                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 80%;">
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/html-5.png" style="height: 50px;" onmouseover="rotate(this);"><br> HTML</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/css-3.png" style="height: 50px;" onmouseover="rotate(this);"><br> CSS</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/JavaScript.png" style="height: 50px;" onmouseover="rotate(this);"><br> JavaScript</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Jquery.png" style="height: 50px;" onmouseover="rotate(this);"><br> Jquery </div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/bootstrap.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Bootstrap</div>
+                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/FontAwesome.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Fontawesome</div>
+                        </div>
+                        <br>
+                    </div>
+                    <div style="display: flex; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">
+                        <br> <div style="width: 200px;">Idiomas</div>
+                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 80%;">
+                            <br> <div class="icosHerLengs"> Español</div>
+                            <br> <div class="icosHerLengs"> Italiano <br> (En estudio)</div>
+                            <br> <div class="icosHerLengs"> English</div>
+                        </div>
+                        <br>
+                    </div>
+                    <div style="display: flex; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">
+                        <br> <div style="width: 200px;">Curzos</div>
+                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 80%;">
+                            <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Curso Profesional de Git y GitHub</div>
+                            <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Italiano (En estudio)</div>
+                            <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Curso de Docker</div>
+                            <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Curso Profesional de DevOps</div>
+                        </div>
+                        <br>
+                    </div>
+              </dialog>
+            </div> 
+            <br>
             <div><h3 id="TitBio1" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio1')" onmouseleave="BtnLeave('TitBio1')" onclick="OpenDialog('dialogBio1')"> Vida estudiantil</h3></div>
             <div id="divDialog1" class="divBio"style="height:0px; transition-duration: 1s; animation-duration: 1s;">  
                 <dialog id="dialogBio1" style="background: transparent; color: #c6c6c6; border:0px;">
@@ -109,70 +186,13 @@
               </dialog>
             </div> 
             <br>
-            <div><h3 id="TitBio4" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio4')" onmouseleave="BtnLeave('TitBio4')" onclick="OpenDialog('dialogBio4')"> Mis conocimientos y habilidades</h3></div>
-            <div id="divDialog4" class="divBio" style="height:0px; transition-duration: 1s; animation-duration: 1s;">
-                <dialog id="dialogBio4"  style="background: transparent; color: #c6c6c6; border:0px; ">
-                    <div style="display: flex; border-top: 1px solid rgba(104, 255, 255, 0.3); border-bottom: 1px solid rgba(104, 255, 255, 0.3); overflow-x: overlay;">
-                        <div style="width: 200px;">Lenguajes de programación</div>
-                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/c++.png" style="height: 50px;" onmouseover="rotate(this);" > <br>C++</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/c-sharp.png" style="height: 50px;" onmouseover="rotate(this);"> <br>C#</div> 
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/php.png" style="height: 50px;" onmouseover="rotate(this);"> <br>PHP</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/SQL.png" style="height: 50px;" onmouseover="rotate(this);"><br> SQL</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; overflow-x: overlay; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">    
-                        <br>
-                        <div style="width: 200px;">herramientas</div>
-                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Git.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Git</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/GitHub.png" style="height: 50px;" onmouseover="rotate(this);"> <br>GitHub</div>  
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/docker.png" style="height: 50px;" onmouseover="rotate(this);"><br> Docker</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Visual Studio Code.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Visual Studio Code</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Visual Studio.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Visual Studio</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/diagrams.png" style="height: 50px;" onmouseover="rotate(this);"><br> Diagrams.net</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/mysql.png" style="height: 80px;" onmouseover="rotate(this);"><br> MySql</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; overflow-x: overlay; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">  
-                        <br> <div style="width: 200px;">Aplicaciones Microsoft</div>
-                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/word.png" style="height: 50px;" onmouseover="rotate(this);"><br> Microsoft Word </div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/excel.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Microsoft Excel</div> 
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/microsoft-access.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Microsoft Acces</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/powerpoint.png" style="height: 50px;" onmouseover="rotate(this);"><br> Microsoft PowerPoint</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; overflow-x: overlay; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">
-                        <br> <div style="width: 200px;">Documentos Google</div>
-                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 75%;">
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/docs.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Google Docs</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/sheets.png" style="height: 50px;" onmouseover="rotate(this);"><br> Google Sheets</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/google-forms.png" style="height: 50px;" onmouseover="rotate(this);"><br> Google Forms </div>
-                        </div>
-                        <br>
-                    </div> 
-                    <div style="display: flex;">
-                        <br> <div style="width: 200px;">Lenguajes y Herramientas de desarrollo web</div>
-                        <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 80%;">
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/html-5.png" style="height: 50px;" onmouseover="rotate(this);"><br> HTML</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/css-3.png" style="height: 50px;" onmouseover="rotate(this);"><br> CSS</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/JavaScript.png" style="height: 50px;" onmouseover="rotate(this);"><br> JavaScript</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/Jquery.png" style="height: 50px;" onmouseover="rotate(this);"><br> Jquery </div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/bootstrap.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Bootstrap</div>
-                            <br> <div class="icosHerLengs"><img class="Aplis" src="imgs/HerrAndLenguajes/FontAwesome.png" style="height: 50px;" onmouseover="rotate(this);"> <br>Fontawesome</div>
-                        </div>
-                        <br>
-                    </div>
-              </dialog>
-            </div> 
-            <br><br><br>
+            <br><br>
             
         </div>
         
         <!--|_____________________________________________________________________________________________--->
         <div id="Aplicaciones" class="contInfo" style="height:0px; top:0px; left:2000px; display: flex; justify-content: center; visibility: hidden;">
-            <div class="ContImgDesc" onmouseenter="mostrar(0)" onmouseleave="ocultar(0)" onclick="console.log('cosa');">
+            <div class="ContImgDesc" onmouseenter="mostrar(0)" onmouseleave="ocultar(0)" onclick="showProyect();">
                 <label>
                     <img class="Aplis" src="imgs/SIC/1.png" style="width: 394.5px; height: 347px;">
                     <i id="imgPlay0" class="imgPlay fa-solid fa-circle-play"></i>
@@ -204,12 +224,11 @@
         <!--|_____________________________________________________________________________________________--->
         <div id="Contactos" class="contInfo" style="height:0px;top:0px; left:2000px; visibility: hidden;">
             <br><br>
-            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-brands fa-linkedin"></i> Linked In<txtDisabled> (inexistente)</txtDisabled></div><br>
-            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-brands fa-github"></i> GitHub</div><br>
-            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-solid fa-envelope"></i> E-Mail</div><br>
-            <div>A completar</div><br>
-            <div>A completar</div><br>
-        </div>
+            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-brands fa-linkedin"></i> LinkedIn<txtDisabled> (inexistente)</txtDisabled></div><br>
+            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-brands fa-github"></i> <a target="_blank" href="https://github.com/GabrielGNP">GitHub</a></div><br>
+            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-solid fa-envelope"></i> gabrielpererojob@gmail.com</div><br>
+            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-brands fa-twitter"></i> <a target="_blank" href="https://twitter.com/GabrielPerero1">Twiter</a></div><br>
+            <div style="font-size:25px"><i style="color:var(--SpecialTextColorPalid); font-size: 50px;" class="fa-brands fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/gabiperero/">Instagram</a></div><br>
         <!--|_____________________________________________________________________________________________--->
         <div id="Blog" class="contInfo" style="height:0px;top:0px; left:2000px; visibility: hidden;  text-align: -webkit-center;">
             <div  style="width:100vh;">
