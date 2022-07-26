@@ -53,34 +53,34 @@ function ChecksOPCont(OP){
                 case 0:
                     //FirstContainer.style.transform = "translate(1000,0)";
                    
-                    FirstContainer.style.left = "-2000px";
+                    FirstContainer.style.left = "-4000px";
                     setTimeout( hide(FirstContainer), 1);
                     //hide(FirstContainer);
                     show(Biografia);
                     Biografia.style.left = "0px";
                     break;
                 case 1:
-                    FirstContainer.style.left = "-2000px";
-                    Biografia.style.left = "-2000px";
+                    FirstContainer.style.left = "-4000px";
+                    Biografia.style.left = "-4000px";
                     setTimeout( hide(FirstContainer), 1);
                     //hide(FirstContainer);
                     show(Aplicaciones);
                     Aplicaciones.style.left = "0px";
                     break;
                 case 2:
-                    FirstContainer.style.left = "-2000px";
-                    Biografia.style.left = "-2000px";
-                    Aplicaciones.style.left = "-2000px";
+                    FirstContainer.style.left = "-4000px";
+                    Biografia.style.left = "-4000px";
+                    Aplicaciones.style.left = "-4000px";
                     setTimeout( hide(FirstContainer), 1);
                     //hide(FirstContainer);
                     show(Contactos);
                     Contactos.style.left = "0px";
                     break;
                 case 3:
-                    FirstContainer.style.left = "-2000px";
-                    Biografia.style.left = "-2000px";
-                    Aplicaciones.style.left = "-2000px";
-                    Contactos.style.left = "-2000px";
+                    FirstContainer.style.left = "-4000px";
+                    Biografia.style.left = "-4000px";
+                    Aplicaciones.style.left = "-4000px";
+                    Contactos.style.left = "-4000px";
                     setTimeout( hide(FirstContainer), 1);
                     //hide(FirstContainer);
                     show(Blog);
@@ -91,7 +91,7 @@ function ChecksOPCont(OP){
         case 0: 
             switch (OP){
                 case 1:
-                    Biografia.style.left = "-2000px";
+                    Biografia.style.left = "-4000px";
                     setTimeout(hide(Biografia), 1);
                     //hide(Biografia);
 
@@ -100,22 +100,22 @@ function ChecksOPCont(OP){
 
                     break;
                 case 2:
-                    Biografia.style.left = "-2000px";
+                    Biografia.style.left = "-4000px";
                     setTimeout(hide(Biografia), 1);
                     //hide(Biografia);
 
-                    Aplicaciones.style.left = "-2000px";
+                    Aplicaciones.style.left = "-4000px";
 
                     show(Contactos);
                     Contactos.style.left = "0px";
                     break;
                 case 3:
-                    Biografia.style.left = "-2000px";
+                    Biografia.style.left = "-4000px";
                     setTimeout(hide(Biografia), 1);
                     //hide(Biografia);
 
-                    Aplicaciones.style.left = "-2000px";
-                    Contactos.style.left = "-2000px";
+                    Aplicaciones.style.left = "-4000px";
+                    Contactos.style.left = "-4000px";
 
                     show(Blog);
                     Blog.style.left = "0px";
@@ -125,7 +125,7 @@ function ChecksOPCont(OP){
         case 1:
             switch (OP){
                 case 0:
-                    Aplicaciones.style.left = "2000px";
+                    Aplicaciones.style.left = "4000px";
                     setTimeout(hide(Aplicaciones), 1);
                     //hide(Aplicaciones);
 
@@ -133,7 +133,7 @@ function ChecksOPCont(OP){
                     Biografia.style.left = "0px";
                     break;
                 case 2:
-                    Aplicaciones.style.left = "-2000px";
+                    Aplicaciones.style.left = "-4000px";
                     setTimeout(hide(Aplicaciones), 1);
                     //hide(Aplicaciones);
 
@@ -141,11 +141,11 @@ function ChecksOPCont(OP){
                     Contactos.style.left = "0px";
                     break;
                 case 3:
-                    Aplicaciones.style.left = "-2000px";
+                    Aplicaciones.style.left = "-4000px";
                     setTimeout(hide(Aplicaciones), 1);
                     //hide(Aplicaciones);
 
-                    Contactos.style.left = "-2000px";
+                    Contactos.style.left = "-4000px";
                     show(Blog);
                     Blog.style.left = "0px";
                     break;
@@ -154,24 +154,24 @@ function ChecksOPCont(OP){
         case 2:
             switch (OP){
                 case 0:
-                    Contactos.style.left = "2000px";
+                    Contactos.style.left = "4000px";
                     setTimeout(hide(Contactos), 1);
                     //hide(Contactos);
-                    Aplicaciones.style.left = "2000px";
+                    Aplicaciones.style.left = "4000px";
 
                     show(Biografia)
                     Biografia.style.left = "0px";
                    
                     break;
                 case 1:
-                    Contactos.style.left = "2000px";
+                    Contactos.style.left = "4000px";
                     setTimeout(hide(Contactos), 1);
                     //hide(Contactos);
                     show(Aplicaciones)
                     Aplicaciones.style.left = "0px";
                     break;
                 case 3:
-                    Contactos.style.left = "-2000px";
+                    Contactos.style.left = "-4000px";
                     setTimeout(hide(Contactos), 1);
                     //hide(Contactos);
 
@@ -183,26 +183,26 @@ function ChecksOPCont(OP){
         case 3:
             switch (OP){
                 case 0:
-                    Blog.style.left = "2000px";
+                    Blog.style.left = "4000px";
                     setTimeout(hide(Blog), 1);
                     //hide(Blog);
 
                     show(Biografia)
                     Biografia.style.left = "0";
-                    Aplicaciones.style.left = "2000px";
-                    Contactos.style.left = "2000px";
+                    Aplicaciones.style.left = "4000px";
+                    Contactos.style.left = "4000px";
                     break;
                 case 1:
-                    Blog.style.left = "2000px";
+                    Blog.style.left = "4000px";
                     setTimeout(hide(Blog), 1);
                     //hide(Blog);
 
                     show(Aplicaciones)
                     Aplicaciones.style.left = "0";
-                    Contactos.style.left = "2000px";
+                    Contactos.style.left = "4000px";
                     break;
                 case 2:
-                    Blog.style.left = "2000px";
+                    Blog.style.left = "4000px";
                     setTimeout(hide(Blog), 1);
                     //hide(Blog);
 
@@ -362,33 +362,31 @@ function ShowPDF(Obj){
 }*/
 
 
-function showProyect(){
-    var Mens = document.createElement("div");
-    var MensSup = document.createElement("div");
-    MensSup.style = "height: 30px; width:100%; background:green; text-align: right";
+function showProyect(nOP){
+    switch (nOP){
+        case 0:
+            text = "Aun no tengo una presentación visual de este proyecto, "+
+            "<br> dentro de poco estará disponible, de momento puedo dejarle un poco de información al respecto."+
+            "<br><br> Gracias y disculpe."+
+            "<br><br>"+
+            "<br>Este proyecto está construido con el lenguaje C#, es una API para Windows."+
+            "<br> Para su creación se utilizó el motor de visual studio 2019"+
+            "<br> El objetivo de este programa es el de poder integrar un contador de clicks del ratón y pulsaciones en el teclado junto con un autoclicker."+
+            "<br> También integra la posibilidad de utilizar macros (ejecuciónes de un conjunto de comandos) configurados por el usuario. <br><br>";            
+            MensNotific(text);
+            break;
+    }
+    
+    
+}
 
-    var ButX= document.createElement("button");
-    ButX.textContent = "X";
-    ButX.style = "margin: 0px; border: 0px; height: 100%; background: transparent";
-    ButX.onclick = "DeleteHTML('MensInf')";
-    MensSup.appendChild(ButX);
-
-    var MensText= document.createElement("div");
-    MensText.style = "height: 50px; width:100%";
-    MensText.textContent = "Aun no tengo una presentación visual de este proyecto";
-
-    Mens.id = "MensInf";
-    Mens.style = "height: 150px; width:400px; position: absolute; top: 50%; left: 35%; background: grey;";
-    Mens.appendChild(MensSup);
-    Mens.appendChild(MensText);
-    //document.getElementById("ContenedorPrincipal").appendChild(Mens);
-
+function MensNotific(text){
     var plantilla = 
-    '<div id="MensInf" style="height: 150px; width:400px; position: absolute; top: 50%; left: 35%; background: #373737;">'+
-        '<div style="height: 30px; width:100%; background:linear-gradient(180deg, #181818, #373737); text-align: right">'
+    '<div id="MensInf" style="height: 200px; width:400px; position: absolute; top: 40%; left: 35%; background: #373737; overflow-y: auto;">'+
+        '<div style="height: 30px; width:100%; max-width:400px; background:linear-gradient(180deg, #181818, #373737); text-align: right; position:fixed">'
             +'<button class="ButOPCont" style="margin: 0px; border: 0px; height: 100%; background:transparent;" onclick="DeleteHTML(`MensInf`)"> X</button>'
         +'</div>'
-        +'<div style="text-align:center; padding-top: 20px;">Aun no tengo una presentación visual de este proyecto</div>'
+        +'<div style="text-align:center; padding-top: 35px;">'+text+'</div>'
     +'</div>';
     
     var block = '<div id="displayblack" style=" position:absolute; top:0px; background : #181818d9; height: '+(document.getElementById("totalDocument").clientHeight+100).toString()+"px"+'; width:100%"></div>';
@@ -396,7 +394,6 @@ function showProyect(){
     document.getElementById("totalDocument").insertAdjacentHTML("beforeend", block) ;
     document.getElementById("totalDocument").style.overflow = "hidden";
     document.getElementById("displayblack").insertAdjacentHTML("beforeend", plantilla) ;
-    
     
 }
 
