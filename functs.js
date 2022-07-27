@@ -382,7 +382,7 @@ function showProyect(nOP){
 
 function MensNotific(text){
     var plantilla = 
-    '<div id="MensInf" style="height: 200px; width:400px; position: absolute; top: 40%; left: 35%; background: #373737; overflow-y: auto;">'+
+    '<div id="MensInf" style="height: 200px; width:400px; position: fixed; top: 40%; left: 35%; background: #373737; overflow-y: auto;">'+
         '<div style="height: 30px; width:100%; max-width:400px; background:linear-gradient(180deg, #181818, #373737); text-align: right; position:fixed">'
             +'<button class="ButOPCont" style="margin: 0px; border: 0px; height: 100%; background:transparent;" onclick="DeleteHTML(`MensInf`)"> X</button>'
         +'</div>'
