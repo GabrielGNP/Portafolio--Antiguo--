@@ -1,0 +1,97 @@
+:root{
+    --colorbase : #1879f7;
+    --colorbaseDark : #0d438a;
+    --TextColor: #c6c6c6;
+
+    --backgroundLight: #b9c7df;
+    --backgroundDark: #2a2a2a;
+}
+
+body{
+    background: var(--backgroundDark);
+    overflow-x: hidden;
+    color: var(--colorbase);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*|  Modificaciones del scrollbar*/
+/*|*/*::-webkit-scrollbar{
+/*|*/    -webkit-appearance: none;
+/*|*/    background: #141619;
+/*|*/}
+/*|*/*::-webkit-scrollbar:vertical {
+/*|*/    width:10px;
+/*|*/}
+/*|*/*::-webkit-scrollbar-button:increment,*::-webkit-scrollbar-button {
+/*|*/   /*display: none;*/
+/*|*/    background-color: rgb(34, 34, 34);
+/*|*/    border: 2px solid #2c2c2c;
+/*|*/} 
+/*|*/
+/*|*/*::-webkit-scrollbar:horizontal {
+/*|*/    height: 10px;
+/*|*/}
+/*|*/
+/*|*/*::-webkit-scrollbar-thumb {
+/*|*/    background-color: rgb(34, 34, 34);
+/*|*/    border-radius: 20px;
+/*|*/    /*border: 2px solid #2c2c2c;*/
+/*|*/    border: 2px solid var(--colorbase);
+/*|*/}
+/*|*/
+/*|*/*::-webkit-scrollbar-track {
+/*|*/    border-radius: 10px;  
+/*|*/}
+/*|_________________________________*/
+
+header{
+    text-align: right;
+}
+
+.changeDarkLight{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 0px;
+    color: red;
+}
+
+#changeDark{
+
+}
+
+
+.title{
+    background: #1b1c21;
+    padding-left: 30px;
+    border: 1px solid #2e69ff;
+    box-shadow: 0px 0px 27px #2f378c;
+    color: var(--colorbase);
+    margin-top: 10px;
+}
+
+
+div{
+    color: var(--TextColor);
+}
+
+.divFil{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: var(--colorbaseDark );
+    /*box-shadow: 0px 0px 5px var(--colorbaseDark ), 
+                0px 0px 10px var(--colorbaseDark ), 
+                0px 0px 15px var(--colorbaseDark ), 
+                0px 0px 20px var(--colorbaseDark ), 
+                0px 0px 25px var(--colorbaseDark ), 
+                0px 0px 30px var(--colorbaseDark ), 
+                0px 0px 35px var(--colorbaseDark ), 
+                0px 0px 40px var(--colorbaseDark );*/
+}
+
+.contimag{
+    background: white;
+    border: 1px solid #1879f7; 
+    width: 50%; 
+}

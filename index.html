@@ -4,12 +4,13 @@
 <head>
     <title> Gabriel Nicolás Perero</title>
     <meta charset="UTF-8">
-    <link href="styles.css" rel="stylesheet"/>
+    <link href="CSS/styles.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/c3a32bb4c5.js" crossorigin="anonymous"></script>
-    <script src="functs.js"></script>
+    <script src="JS/functs.js"></script>
 </head>
 
 <body id="totalDocument">
+    <div id="fond" class="background"></div>
     <header>
         <div id="Title">
             <h1 id="titleh1" style="text-align: left; font-style: italic; border-bottom: 5px solid var(--SpecialTextColorPalid); width: 247px;"> Gabriel Nicolás <br>Perero</h1>
@@ -59,7 +60,7 @@
                 <br>Nací en Córdoba capital (Argentina), a los 5 años me mudé a Entre Ríos donde habito actualmente. Vivo en un pueblito, no muy grande pero se podría decir que nunca me faltaron cosas, y no, no ando montando vacas.
             </div>
             <br><br>
-            <div><h3 id="TitBio4" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio4')" onmouseleave="BtnLeave('TitBio4')" onclick="OpenDialog('dialogBio4')"> Mis conocimientos y habilidades</h3></div>
+            <div><h3 id="TitBio4" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio4')" onmouseleave="BtnLeave('TitBio4')" onclick="OpenDialog('dialogBio4')"> <i id="arrowBio4" class="fa-solid fa-arrow-down"></i> Mis conocimientos y habilidades</h3></div>
             <div id="divDialog4" class="divBio" style="height:0px; transition-duration: 1s; animation-duration: 1s;">
                 <dialog id="dialogBio4"  style="background: transparent; color: #c6c6c6; border:0px; ">
                     <div style="display: flex; border-top: 1px solid rgba(104, 255, 255, 0.3); border-bottom: 1px solid rgba(104, 255, 255, 0.3); overflow-x: overlay;">
@@ -124,19 +125,19 @@
                         <br>
                     </div>
                     <div style="display: flex; border-bottom: 1px solid rgba(104, 255, 255, 0.3)">
-                        <br> <div style="width: 200px;">Curzos</div>
+                        <br> <div style="width: 200px;">Cursos</div>
                         <div style="overflow-x: overlay; display: flex; overflow-y: hidden; width: 80%;">
                             <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Curso Profesional de Git y GitHub</div>
-                            <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Italiano (En estudio)</div>
                             <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Curso de Docker</div>
                             <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br>Curso Profesional de DevOps</div>
+                            <br> <div class="icosHerLengs"> <img class="Aplis" src="imgs/HerrAndLenguajes/Platzi.png" style="height: 50px;" onmouseover="rotate(this);"><br><div class="SpecialScrollbar" style="overflow-y: scroll; height: 60px;">Curso de New Relic: Observabilidad, Monitoreo y Permormance Web</div></div>
                         </div>
                         <br>
                     </div>
               </dialog>
             </div> 
             <br>
-            <div><h3 id="TitBio1" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio1')" onmouseleave="BtnLeave('TitBio1')" onclick="OpenDialog('dialogBio1')"> Vida estudiantil</h3></div>
+            <div><h3 id="TitBio1" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio1')" onmouseleave="BtnLeave('TitBio1')" onclick="OpenDialog('dialogBio1')"> <i id="arrowBio1" class="fa-solid fa-arrow-down"></i> Vida estudiantil</h3></div>
             <div id="divDialog1" class="divBio"style="height:0px; transition-duration: 1s; animation-duration: 1s;">  
                 <dialog id="dialogBio1" style="background: transparent; color: #c6c6c6; border:0px;">
                     Completé la primaria y la secundaria en mi pueblo. En 2018, cuando comencé la universidad.
@@ -158,7 +159,7 @@
                 </dialog> 
             </div>
             <br>
-            <div><h3 id="TitBio2" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio2')" onmouseleave="BtnLeave('TitBio2')" onclick="OpenDialog('dialogBio2')"> Vida profecional</h3></div>
+            <div><h3 id="TitBio2" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio2')" onmouseleave="BtnLeave('TitBio2')" onclick="OpenDialog('dialogBio2')"> <i id="arrowBio2" class="fa-solid fa-arrow-down"></i> Vida profecional</h3></div>
             <div id="divDialog2" class="divBio" style="height:0px; transition-duration: 1s; animation-duration: 1s;">
                 <dialog id="dialogBio2" style="background: transparent;color: #c6c6c6; border:0px; ">
                     La verdad que nunca tuve un trabajo, no tengo experiencia laboral aunque siempre he estado haciendo y toqueteando la programación, eso de crear cosas y que me resulte difícil hacerlo me resulta atractivo.
@@ -169,7 +170,7 @@
                 </dialog>
             </div>
             <br>
-            <div><h3 id="TitBio3" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio3')" onmouseleave="BtnLeave('TitBio3')" onclick="OpenDialog('dialogBio3')"> Como soy</h3></div>
+            <div><h3 id="TitBio3" style="color:rgb(1, 201, 201); border:1px solid rgba(104, 255, 255, 0.3); margin: 0px;" onmouseenter="BtnEnter('TitBio3')" onmouseleave="BtnLeave('TitBio3')" onclick="OpenDialog('dialogBio3')"> <i id="arrowBio3" class="fa-solid fa-arrow-down"></i> Como soy</h3></div>
             <div id="divDialog3" class="divBio" style="height:0px; transition-duration: 1s; animation-duration: 1s;">
                 <dialog id="dialogBio3"  style="background: transparent; color: #c6c6c6; border:0px; ">
                     La verdad no sabría cómo describirme, diría que normal pero tampoco llego a ser como el estereotipo de las personas de mi generación, soy más... ¿peculiar? 
