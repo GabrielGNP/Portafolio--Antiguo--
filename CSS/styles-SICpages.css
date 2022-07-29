@@ -44,9 +44,7 @@ body{
 /*|*/}
 /*|_________________________________*/
 
-header{
-    text-align: right;
-}
+
 
 .changeDarkLight{
     width: 20px;
@@ -56,30 +54,31 @@ header{
     color: red;
 }
 
-#changeDark{
-
-}
 
 
 .title{
     background: #1b1c21;
-    padding-left: 30px;
+
     border: 1px solid #2e69ff;
     box-shadow: 0px 0px 27px #2f378c;
     color: var(--colorbase);
     margin-top: 10px;
 }
 
-
+.titles{
+    text-align: center;
+    color: var(--colorbase);
+    font-size: 50px;
+    background: radial-gradient(#161518, transparent,transparent);
+}
 div{
     color: var(--TextColor);
 }
 
 .divFil{
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: flex;
     background: var(--colorbaseDark );
+    padding: 10px;
     /*box-shadow: 0px 0px 5px var(--colorbaseDark ), 
                 0px 0px 10px var(--colorbaseDark ), 
                 0px 0px 15px var(--colorbaseDark ), 
@@ -90,8 +89,58 @@ div{
                 0px 0px 40px var(--colorbaseDark );*/
 }
 
-.contimag{
-    background: white;
-    border: 1px solid #1879f7; 
-    width: 50%; 
+#ChecksOPCont{
+    border: 0px solid #141619;
+    display: block;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.LabelOPCont{
+    background: linear-gradient(#2c2f31, #202326 60%, #131416);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 3px solid var(--colorbase);
+    border-bottom: 3px solid var(--colorbaseDark);
+
+    height: 30px;
+    padding: 5px;
+    padding-right: 30px;
+    float: left;
+    margin: 0.5px;
+    width: 31%;
+    text-align: center;
+    
+}
+.LabelOPContCheck{
+    background: linear-gradient(#414547, #303438 60%, #282c30);
+    height: 30px;
+    padding: 5px;
+    padding-right: 30px;
+    float: left;
+    margin: 0.5px;
+    width: 31%;
+    text-align: center;
+    color: var(--SpecialTextColorPalid);
+    text-shadow: 0px 0px 20px cyan;
+    box-shadow: 0px 0px 1px cyan;
+}
+
+.LabelOPCont:hover{
+    color: var(--SpecialTextColorPalid);
+    background: linear-gradient(#414547, #303438 60%, #282c30);
+}
+
+a{
+    color: var(--colorbase);
+    font-size: 20px;
+}
+Alert{
+    color:orange;
+}
+item{
+    color:var(--colorbase);
+    font-size: 10px;
+
 }
