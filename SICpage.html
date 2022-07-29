@@ -12,8 +12,14 @@
 <body>
     <header>
         <div style="text-align: right;">
-            <button id="changeDark" class="changeDarkLight" ><i class="fa-solid fa-sun"></i></button>
-            <button id="changeLight" class="changeDarkLight" ><i class="fa-solid fa-moon"></i></button>
+            <label>
+                <input type="checkbox" class="changeDarkLight" name="DarkLight" id="changeLight" style="visibility:hidden; height: 0xp;width: 0px;"  onchange="ChangeDarkLight(1);">
+                <i id="ChaL" class="SM fa-solid fa-sun" style="color: var(--TextColor); font-size: 15px;"></i>
+            </label>
+            <label>
+                <input type="checkbox" class="changeDarkLight" name="DarkLight" id="changeDark" style="visibility:hidden; height: 0xp; width: 0px;" onchange="ChangeDarkLight(0);">
+                <i id="ChaD" class="SM fa-solid fa-moon" style="color: var(--colorbase); font-size: 25px;"></i>
+            </label>
         </div>
         
         <div class="title" style="margin-bottom:100px;">
@@ -59,9 +65,8 @@
                 <div class="contimag" style="margin-right: 50px;">
                     <img src="imgs/SIC/2.png" style="height: 480px;">
                 </div>
-                <div style="width: 50%;padding: 20px;">
+                <div class="DivInternoDivFil" style="width: 50%;padding: 20px;">
                     <h1>CONTADORES</h1>
-                    <div>
                         Este programa busca poder proporcionar un control sobre los clics y las pulsaciones de las teclas 
                         brindando contadores que cuentan los diferentes clics del ratón y las pulsaciones de cualquier tecla 
                         del teclado. 
@@ -69,7 +74,6 @@
                         <br>¿Cuantos clics haces al día? ¿Cuantas teclas pulsas al día?
                         <br>¿Haces demasiados clics?¿Que tanto uso le das a tus periféricos?
                         <br>El programa facilita contadores para tener un control sobre estos datos. Además, facilita un temporizador para poder tener una referencia de tiempo.
-                    </div>
                 </div>
             </div>
 
@@ -96,7 +100,7 @@
                 <div class="contimag" style="margin-right: 50px;">
                     <img src="imgs/SIC/4.png" style="height: 480px;">
                 </div>
-                <div style="width: 50%;padding: 20px;">
+                <div class="DivInternoDivFil" style="width: 50%;padding: 20px;">
                     <h1>MACROS</h1>
                     Claro, sistema de control de entradas, un autoclicker no es suficiente para decir que se controlan entradas,
                     por eso el programa incluye la posibilidad de crear macros. Una macro es un conjunto de comandos listos para 
@@ -117,16 +121,14 @@
                 <div class="contimag" style="margin-right: 50px;">
                     <img src="imgs/SIC/5.png" style="height: 480px;">
                 </div>
-                <div style="width: 50%;padding: 20px;">
+                <div class="DivInternoDivFil"  style="width: 50%;padding: 20px;">
                     <h1>Personalización</h1>
-                    <div>
                         El programa cuenta con la posibilidad de personalizar su aspecto.
                         <br>¿Cómo puede hacer esto?
                         <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> Para empezar puede elegir el color de la ventana. Puede que esté familiarizado con las opciones de modo oscuro o modo claro de los navegadores, páginas web, aplicaciones móviles o Windows 10 en adelante. Este programa tiene la opción para que usted pueda sentirse cómodo al usarlo. Puede ponerlo en modo oscuro o modo claro.
                         <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> En las opciones del programa, también se da a disposición un grupo de colores donde el usuario puede elegir el color que más le guste de entre las 8 opciones que tiene. La primera opción es el color por defecto del programa. Esto cambiará el color secundario de programa.
                         <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> También puede cambiar el color del texto según le guste o se adapte más a sus gustos. Puede elegir entre 4 opciones.
                         <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> También puede poner el tipo de letra en bold (negrita). Esto puede ayudarle a leer mejor el programa.
-                    </div>
                 </div>
             </div>
             <div >
@@ -150,7 +152,7 @@
             <br><br><item><i class="fa-solid fa-circle"></i></item> Este programa no incluye un KeyLoger. Solo registra de manera numérica las pulsaciones de las teclas y los clics sin tener en cuenta el orden ni cuándo se han hecho. Es un programa seguro.
    
             <br><br><item><i class="fa-solid fa-circle"></i></item> La velocidad del autoclicker dependerá no solo de valor indicado, también dependerá de la capacidad de procesamiento del dispositivo donde esté instalado.
-            <br><br><item><i class="fa-solid fa-circle"></i></item> Actualmente el programa solo se puede asegurar su funcionamiento en Windows 10.
+            <br><br><item><i class="fa-solid fa-circle"></i></item> Actualmente solo se puede asegurar el funcionamiento correcto del programa en Windows 10.
             <br>
             <br> <br><Alert><i class="fa-solid fa-triangle-exclamation"></i> El programa no está en su versión final, las macros aun no son funcionales.</Alert>
             <br><br> <Alert><i class="fa-solid fa-triangle-exclamation"></i> El programa es una versión temprana y de prueba, no está optimizado al máximo por lo que puede que no tenga el rendimiento debido.</Alert>
