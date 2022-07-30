@@ -371,21 +371,24 @@ function ShowPDF(Obj){
 
 
 function showProyect(nOP){
+    var text;
     switch (nOP){
         case 0:
-            text = "Aun no tengo una presentación visual de este proyecto, "+
-            "<br> dentro de poco estará disponible, de momento puedo dejarle un poco de información al respecto."+
+            text = "Aun no tengo una presentación visual de este proyecto,"+
+            "<br> dentro de poco estará disponible."+
             "<br><br> Gracias y disculpe."+
-            "<br><br>"+
-            "<br>Este proyecto está construido con el lenguaje C#, es una API para Windows."+
-            "<br> Para su creación se utilizó el motor de visual studio 2019"+
-            "<br> El objetivo de este programa es el de poder integrar un contador de clicks del ratón y pulsaciones en el teclado junto con un autoclicker."+
-            "<br> También integra la posibilidad de utilizar macros (ejecuciónes de un conjunto de comandos) configurados por el usuario. <br><br>";            
+            "<br><br>";
+            MensNotific(text);
+            break;
+        case 1:
+            text = "Este proyecto no tiene una página web."+
+            "<br> Lamento mucho si estaba interesado es la aplicación, debido a que es un proyecto final de carrera y no fue construido únicamente por mi, no puedo distribuir la aplicación ni su código."+
+            "<br><br> Si está interesado en esta Web app, por favor no dude en contactarme."+
+            "<br><br> Gracias y disculpe los inconvenientes."+
+            "<br><br>";    
             MensNotific(text);
             break;
     }
-    
-    
 }
 
 function MensNotific(text){
