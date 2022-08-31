@@ -13,7 +13,7 @@ window.onresize = function(){
 var opSel = -1;
 function ChecksOPCont(OP){
     document.getElementById("CheckOP"+OP).checked = true;
-    for( i=0; i<4;i++){
+    for( i=0; i<3;i++){
         var lavel = document.getElementById("CheckOP"+i).parentNode;
         if (document.getElementById("CheckOP"+i).checked){ 
             lavel.className = "LabelOPContCheck";
@@ -38,15 +38,15 @@ function ChecksOPCont(OP){
     var Biografia = document.getElementById("Biografía");
     var Aplicaciones = document.getElementById("Aplicaciones");
     var Contactos = document.getElementById("Contactos");
-    var Blog = document.getElementById("Blog");
+    //var Blog = document.getElementById("Blog");
     document.getElementById("dialogBio1").open = true;
     document.getElementById("dialogBio2").open = true;
     document.getElementById("dialogBio3").open = true;
-    document.getElementById("dialogBio4").open = true;
+    //document.getElementById("dialogBio4").open = true;
     OpenDialog("dialogBio1");
     OpenDialog("dialogBio2");
     OpenDialog("dialogBio3");
-    OpenDialog("dialogBio4");
+    //OpenDialog("dialogBio4");
     switch(opSel){
         case -1:
             switch (OP){
@@ -76,7 +76,7 @@ function ChecksOPCont(OP){
                     show(Contactos);
                     Contactos.style.left = "0px";
                     break;
-                case 3:
+                /*case 3:
                     FirstContainer.style.left = "-4000px";
                     Biografia.style.left = "-4000px";
                     Aplicaciones.style.left = "-4000px";
@@ -85,7 +85,7 @@ function ChecksOPCont(OP){
                     //hide(FirstContainer);
                     show(Blog);
                     Blog.style.left = "0px";
-                    break;
+                    break;*/
             }
             break;
         case 0: 
@@ -109,7 +109,7 @@ function ChecksOPCont(OP){
                     show(Contactos);
                     Contactos.style.left = "0px";
                     break;
-                case 3:
+                /*case 3:
                     Biografia.style.left = "-4000px";
                     setTimeout(hide(Biografia), 1);
                     //hide(Biografia);
@@ -119,7 +119,7 @@ function ChecksOPCont(OP){
 
                     show(Blog);
                     Blog.style.left = "0px";
-                    break;
+                    break;*/
             }
             break;
         case 1:
@@ -140,7 +140,7 @@ function ChecksOPCont(OP){
                     show(Contactos)
                     Contactos.style.left = "0px";
                     break;
-                case 3:
+                /*case 3:
                     Aplicaciones.style.left = "-4000px";
                     setTimeout(hide(Aplicaciones), 1);
                     //hide(Aplicaciones);
@@ -148,7 +148,7 @@ function ChecksOPCont(OP){
                     Contactos.style.left = "-4000px";
                     show(Blog);
                     Blog.style.left = "0px";
-                    break;
+                    break;*/
             }
             break;
         case 2:
@@ -180,7 +180,7 @@ function ChecksOPCont(OP){
                     break;
             }
             break;
-        case 3:
+        /*case 3:
             switch (OP){
                 case 0:
                     Blog.style.left = "4000px";
@@ -210,7 +210,7 @@ function ChecksOPCont(OP){
                     Contactos.style.left = "0px";
                     break;
             }
-            break;
+            break;*/
     }
 
     opSel = OP;
@@ -283,11 +283,11 @@ function OpenDialog(Id){
                 document.getElementById("divDialog3").style.height = "0px";
                 document.getElementById("arrowBio3").className = "fa-solid fa-arrow-down";
                 break;
-            case "dialogBio4":
+            /*case "dialogBio4":
                 document.getElementById("TitBio4").style.border = "1px solid rgba(104, 255, 255, 0.3)";
                 document.getElementById("divDialog4").style.height = "0px";
                 document.getElementById("arrowBio4").className = "fa-solid fa-arrow-down";
-                break;
+                break;*/
         }
     }else{
         dialog.open = true;
@@ -315,12 +315,12 @@ function OpenDialog(Id){
                 document.getElementById("dialogBio3").style.width = (document.getElementById("TitBio3").clientWidth - 32).toString()+"px";
                 document.getElementById("arrowBio3").className = "fa-solid fa-arrow-up";
                 break;
-            case "dialogBio4":
+            /*case "dialogBio4":
                 document.getElementById("TitBio4").style.borderBottom = "0px";
                 document.getElementById("divDialog4").style.height = dialog.clientHeight.toString()+"px";
                 document.getElementById("dialogBio4").style.width = (document.getElementById("TitBio4").clientWidth - 32).toString()+"px";
                 document.getElementById("arrowBio4").className = "fa-solid fa-arrow-up";
-                break;
+                break;*/
         }
     }
 }
@@ -338,10 +338,10 @@ function resizing(){
         document.getElementById("divDialog3").style.height = document.getElementById("dialogBio3").clientHeight.toString()+"px";
         document.getElementById("dialogBio3").style.width = (document.getElementById("TitBio3").clientWidth - 32).toString()+"px";
     }
-    if (!!document.getElementById("dialogBio4")){
+    /*if (!!document.getElementById("dialogBio4")){
         document.getElementById("divDialog4").style.height = document.getElementById("dialogBio4").clientHeight.toString()+"px";
         document.getElementById("dialogBio4").style.width = (document.getElementById("TitBio4").clientWidth - 32).toString()+"px";
-    }
+    }*/
 }
 
 function rotate(id){
