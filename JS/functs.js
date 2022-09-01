@@ -42,11 +42,11 @@ function ChecksOPCont(OP){
     document.getElementById("dialogBio1").open = true;
     document.getElementById("dialogBio2").open = true;
     document.getElementById("dialogBio3").open = true;
-    //document.getElementById("dialogBio4").open = true;
+    document.getElementById("dialogBio4").open = true;
     OpenDialog("dialogBio1");
     OpenDialog("dialogBio2");
     OpenDialog("dialogBio3");
-    //OpenDialog("dialogBio4");
+    OpenDialog("dialogBio4");
     switch(opSel){
         case -1:
             switch (OP){
@@ -283,11 +283,11 @@ function OpenDialog(Id){
                 document.getElementById("divDialog3").style.height = "0px";
                 document.getElementById("arrowBio3").className = "fa-solid fa-arrow-down";
                 break;
-            /*case "dialogBio4":
+            case "dialogBio4":
                 document.getElementById("TitBio4").style.border = "1px solid rgba(104, 255, 255, 0.3)";
                 document.getElementById("divDialog4").style.height = "0px";
                 document.getElementById("arrowBio4").className = "fa-solid fa-arrow-down";
-                break;*/
+                break;
         }
     }else{
         dialog.open = true;
@@ -315,12 +315,12 @@ function OpenDialog(Id){
                 document.getElementById("dialogBio3").style.width = (document.getElementById("TitBio3").clientWidth - 32).toString()+"px";
                 document.getElementById("arrowBio3").className = "fa-solid fa-arrow-up";
                 break;
-            /*case "dialogBio4":
+            case "dialogBio4":
                 document.getElementById("TitBio4").style.borderBottom = "0px";
                 document.getElementById("divDialog4").style.height = dialog.clientHeight.toString()+"px";
                 document.getElementById("dialogBio4").style.width = (document.getElementById("TitBio4").clientWidth - 32).toString()+"px";
                 document.getElementById("arrowBio4").className = "fa-solid fa-arrow-up";
-                break;*/
+                break;
         }
     }
 }
@@ -338,10 +338,10 @@ function resizing(){
         document.getElementById("divDialog3").style.height = document.getElementById("dialogBio3").clientHeight.toString()+"px";
         document.getElementById("dialogBio3").style.width = (document.getElementById("TitBio3").clientWidth - 32).toString()+"px";
     }
-    /*if (!!document.getElementById("dialogBio4")){
+    if (!!document.getElementById("dialogBio4")){
         document.getElementById("divDialog4").style.height = document.getElementById("dialogBio4").clientHeight.toString()+"px";
         document.getElementById("dialogBio4").style.width = (document.getElementById("TitBio4").clientWidth - 32).toString()+"px";
-    }*/
+    }
 }
 
 function rotate(id){
