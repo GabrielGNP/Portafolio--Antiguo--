@@ -47,10 +47,11 @@ function ChangeDarkLight(OP){
             CheckCL.style.fontSize = "25px";
             CheckCD.style.color ="var(--TextColor)";
             CheckCD.style.fontSize = "15px";
-            document.documentElement.style.setProperty('--backgroundLight','#c6c6c6');
-            document.documentElement.style.setProperty('--background', '#b9c7df');
-            document.documentElement.style.setProperty('--backgroundDark', '#666666');
+            document.documentElement.style.setProperty('--backgroundLight','#656e89');
+            document.documentElement.style.setProperty('--background', '#bcd3fb');
+            document.documentElement.style.setProperty('--backgroundDark', '#1b1c21');
             document.documentElement.style.setProperty('--backgroundHebyDark', '#2e2e2e');
+            document.getElementById("titleText").style.color = "#c6c6c6";
 
             document.documentElement.style.setProperty('--TextColor', '#191919');
             document.documentElement.style.setProperty('--alert', '#c8451f');
