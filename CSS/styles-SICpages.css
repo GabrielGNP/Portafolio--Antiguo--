@@ -50,6 +50,11 @@ body{
 /*|*/*::-webkit-scrollbar-track {
 /*|*/    border-radius: 10px;  
 /*|*/}
+/*|*/*::-webkit-scrollbar-corner {
+/*|*/     background-color: rgb(34, 34, 34);
+/*|*/     border: 2px solid #2c2c2c;
+/*|*/}
+
 /*|_________________________________*/
 
 
@@ -69,8 +74,8 @@ body{
 .title{
     background: var(--backgroundDark);/*#1b1c21;*/
 
-    border: 1px solid #2e69ff;
-    box-shadow: 0px 0px 27px #2f378c;
+    border: 1px solid var(--colorbase);
+    box-shadow: 0px 0px 27px var(--colorbase);
     color: var(--colorbase);
     margin-top: 10px;
 }
@@ -165,4 +170,40 @@ item{
 .SM{
     transition-duration: 1s;
     animation-duration: 1s;
+}
+
+.ContCod1{
+    background: var(--Codcolorbase);
+    width: 65%;
+    height: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 3px solid var(--CodcolorLight);
+    border-left: 3px solid var(--CodcolorLight);
+    border-right: 3px solid var(--CodcolorShadow);
+    border-bottom: 3px solid var(--CodcolorShadow);
+}
+
+:root{
+    --Codcolorbase:#190c1d;
+    --CodcolorShadow:#100115;
+    --CodcolorLight:#2c1f34;
+}
+
+.ContCod2{
+    width: 90%;
+    height: 90%;
+    padding: 20px; 
+    text-align: left;
+    background: #010014;
+    color: green;
+    overflow: scroll;
+    border-top: 3px solid var(--CodcolorShadow);
+    border-left: 3px solid var(--CodcolorShadow);
+    border-bottom: 3px solid var(--CodcolorLight);
+    border-right: 3px solid var(--CodcolorLight);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }

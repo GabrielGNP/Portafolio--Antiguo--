@@ -79,7 +79,7 @@
         <div style="margin-bottom:200px">
             <div class="divFil" >
                 <div class="contimag" style="margin-right: 50px;">
-                    <img src="imgs/SIC/v2B.png" style="height: 480px;">
+                    <img id="img1" src="imgs/SIC/v2B.png" style="height: 480px;">
                 </div>
                 <div class="DivInternoDivFil" style="width: 50%;padding: 20px;">
                     <h1>CONTADORES</h1>
@@ -123,7 +123,7 @@
         <div style="margin-bottom:200px">
             <div class="divFil" >
                 <div class="contimag" style="margin-right: 50px;">
-                    <img src="imgs/SIC/v2OP.png" style="height: 480px;">
+                    <img id="img2" src="imgs/SIC/v2OP.png" style="height: 480px;">
                 </div>
                 <div class="DivInternoDivFil"  style="width: 50%;padding: 20px;">
                     <h1>Personalización</h1>
@@ -141,7 +141,61 @@
                         <h1>CONFIGURACIÓN DE FUNCIONAMIENTO</h1>
                         En las opciones de programa también puede cambiar una configuración importante del programa, iniciar junto con el sistema. Es importante esta función porque va a hacer que la contabilización de las teclas y los clics sea más exacto, de esta manera tiene un control del uso de sus periféricos más preciso.
                     </div>
+                    <div class="contimag" style="margin-right: 50px;width: 50%;padding: 20px; text-align: center;">
+                        <h1> Cambie el color del programa ;)</h1>
+                        <div style="display: flex;
+                        justify-content: space-evenly;">
+                            <button style="width: 20px; height: 20px; 
+                                        background: #0946ff; 
+                                        border: 0px; border-radius: 5px;"
+                                    onclick="ChangeColor('Blue')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #b22222; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Red')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #ffa500; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Yelow')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #9acd32; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Green')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #40e0d0; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Cyan')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #6495ed; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('LightBlue')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #9370db; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Purple')"> 
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
 
@@ -171,96 +225,94 @@
                     text-align: center; 
                     margin-bottom: 150px; 
                     text-align: -webkit-center;
-                    font-family: monospace;"> 
+                    font-family: monospace;
+                    "> 
             <h1 class="titles" style="padding-left: 200px; padding-right: 200px;">
                 HISTORIAL DE CAMBIOS Y VERSIONES
             </h1> 
-            <div style="width: 65%;
-                height: 450px;
-                padding: 20px; 
-                text-align: left;
-                background: #010014;
-                color: green;
-                overflow: scroll;">
-                <div>
-                    <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.2</c> <br><br>
-                    <c style="color:white;">Detalles técnicos:</c><br>
-                    <div style="padding-left: 40px; padding-top: 5px;"> 
-                        <c style="color:rgb(1, 184, 1);">
-                            Ligeras correcciones y mejoras en la UI. <br>
-                            <br>
-                            Corrección de errores: <br>
-                            Se agregaron medidas para evitar la corrupción del archivo que guarda los datos de los contadores. <br>
-                            Se corrigieron algunos errores leves al cambiar el aspecto del programa con las opciones.<br>
-                            <br>
-                        </c>
+            <div class="ContCod1">
+                <div class="ContCod2" >
+                    <div>
+                        <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.2</c> <br><br>
+                        <c style="color:white;">Detalles técnicos:</c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Ligeras correcciones y mejoras en la UI. <br>
+                                <br>
+                                Corrección de errores: <br>
+                                Se agregaron medidas para evitar la corrupción del archivo que guarda los datos de los contadores. <br>
+                                Se corrigieron algunos errores leves al cambiar el aspecto del programa con las opciones.<br>
+                                <br>
+                            </c>
+                        </div>
+        
+                        <c style="color:white;">Comentario del desarrollador: </c><br>
+                        
+                            <div style="padding-left: 40px; padding-top: 5px;"> <c style="color:rgb(1, 184, 1);">
+                                Agregué dos mejoras en la gestión de los archivos que contienen los datos de los contadores. <br>
+                                Uno intenta reparar los archivos que se corrompen para que el programa pueda continuar funcionando aunque los archivos no estén como deban estar.
+                                La segunda mejora es para intentar evitar o reducir la posibilidad de que los archivos se corrompan debido a un cierre inesperado del programa. <br>
+                                <br>
+                                Hasta el momento no pude volver a simular el error, supongo que las correcciones funcionan.
+                            </c></div>
+                        <br>
                     </div>
-    
-                    <c style="color:white;">Comentario del desarrollador: </c><br>
+                    <br>
+                    ==============================================================================
+                    <br><br>
+                    <div>
+                        <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.1</c> <br><br>
+                        <c style="color:white;">Detalles técnicos:</c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Modificación de la UI del programa.
+                                <br><br>
+                                Corrección de errores: <br>
+                                En ocasiones, el autoclic no funcionaba al activarse.
+                                <br><br>
+                            </c>
+                        </div>
+        
+                        <c style="color:white;">Comentario del desarrollador: </c><br>
+                        
+                            <div style="padding-left: 40px; padding-top: 5px;"> <c style="color:rgb(1, 184, 1);">
+                                Modifiqué bastante el UI de programa, lo intenté hacer más simples y compacto. En comparación a como estaba antes... lo logré. <br>
+                                <br>
+                                No me esperaba estos errores raros pero es lo que hay, si surgen se tienen que solucionar.  <br>
+                                El del autoclic es un error mío, cuando lo programé no puse en el orden correcto dos líneas de código, en este caso el orden de los productos si afectó al resultado.<br>
+                                <br>
+                                Aún no publico el instalador, no hasta solucionar estos fallos y comprobar que no hay fallos grabes como el de corromper el archivo de contadores.
+                            </c></div>
+                        <br>
+                    </div>
+                    <br>
+                    ==============================================================================
+                    <br><br>
                     
-                        <div style="padding-left: 40px; padding-top: 5px;"> <c style="color:rgb(1, 184, 1);">
-                            Agregué dos mejoras en la gestión de los archivos que contienen los datos de los contadores. <br>
-                            Uno intenta reparar los archivos que se corrompen para que el programa pueda continuar funcionando aunque los archivos no estén como deban estar.
-                            La segunda mejora es para intentar evitar o reducir la posibilidad de que los archivos se corrompan debido a un cierre inesperado del programa. <br>
-                             <br>
-                            Hasta el momento no pude volver a simular el error, supongo que las correcciones funcionan.
-                        </c></div>
-                       <br>
-                </div>
-                <br>
-                ========================================================================================
-                <br><br>
-                <div>
-                    <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.1</c> <br><br>
-                    <c style="color:white;">Detalles técnicos:</c><br>
-                    <div style="padding-left: 40px; padding-top: 5px;"> 
-                        <c style="color:rgb(1, 184, 1);">
-                            Modificación de la UI del programa.
-                            <br><br>
-                            Corrección de errores: <br>
-                            En ocasiones, el autoclic no funcionaba al activarse.
-                            <br><br>
-                        </c>
-                    </div>
-    
-                    <c style="color:white;">Comentario del desarrollador: </c><br>
-                    
-                        <div style="padding-left: 40px; padding-top: 5px;"> <c style="color:rgb(1, 184, 1);">
-                            Modifiqué bastante el UI de programa, lo intenté hacer más simples y compacto. En comparación a como estaba antes... lo logré. <br>
-                            <br>
-                            No me esperaba estos errores raros pero es lo que hay, si surgen se tienen que solucionar.  <br>
-                            El del autoclic es un error mío, cuando lo programé no puse en el orden correcto dos líneas de código, en este caso el orden de los productos si afectó al resultado.<br>
-                            <br>
-                            Aún no publico el instalador, no hasta solucionar estos fallos y comprobar que no hay fallos grabes como el de corromper el archivo de contadores.
-                        </c></div>
-                       <br>
-                </div>
-                <br>
-                ========================================================================================
-                <br><br>
-                
-                <div>
-                    <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.0</c> <br><br>
-                    <c style="color:white;">Detalles técnicos:</c><br>
-                    <div style="padding-left: 40px; padding-top: 5px;"> 
-                        <c style="color:rgb(1, 184, 1);">
-                            Primera versión funcional del programa. <br>
-                            Contadores funcionando correctamente. <br>
-                            Autoclic funcionando correctamente. <br><br>
-                        </c>
-                    </div>
-                       
-                    <c style="color:white;">Comentario del desarrollador: </c><br>
-                    <div style="padding-left: 40px; padding-top: 5px;"> 
-                        <c style="color:rgb(1, 184, 1);">
-                            Bieeeeeeen... al fin lo terminé. La verdad que me llevó trabajo pero al fin puedo decir que está terminado, es funcional y le voy a dar utilidad.<br><br>
+                    <div>
+                        <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.0</c> <br><br>
+                        <c style="color:white;">Detalles técnicos:</c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Primera versión funcional del programa. <br>
+                                Contadores funcionando correctamente. <br>
+                                Autoclic funcionando correctamente. <br><br>
+                            </c>
+                        </div>
+                        
+                        <c style="color:white;">Comentario del desarrollador: </c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Bieeeeeeen... al fin lo terminé. La verdad que me llevó trabajo pero al fin puedo decir que está terminado, es funcional y le voy a dar utilidad.<br><br>
 
-                            No voy a publicar el instalador hasta comprobar que el programa funciona correctamente.<br>
-                            De todas formas el código está en GitHub.
-                        </c>
+                                No voy a publicar el instalador hasta comprobar que el programa funciona correctamente.<br>
+                                De todas formas el código está en GitHub.
+                            </c>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             
         </div>
 
