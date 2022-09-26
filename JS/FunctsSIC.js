@@ -69,50 +69,50 @@ function ChangeColor(OP){
         case "Blue":
             document.documentElement.style.setProperty('--colorbase','#0946ff');
             document.documentElement.style.setProperty('--colorbaseDark','#072b9b');
-            document.getElementById("img1").src="imgs/SIC/v2B.png";
-            document.getElementById("img2").src="imgs/SIC/v2BOP.png";
+            document.getElementById("img1").src="../imgs/SIC/v2B.png";
+            document.getElementById("img2").src="../imgs/SIC/v2BOP.png";
             break;
 
         case "Red":
             document.documentElement.style.setProperty('--colorbase','#b22222');
             document.documentElement.style.setProperty('--colorbaseDark','#600c0c');
-            document.getElementById("img1").src="imgs/SIC/v2R.png";
-            document.getElementById("img2").src="imgs/SIC/v2ROP.png";
+            document.getElementById("img1").src="../imgs/SIC/v2R.png";
+            document.getElementById("img2").src="../imgs/SIC/v2ROP.png";
             break;
 
         case "Yelow":
             document.documentElement.style.setProperty('--colorbase','#ffa500');
             document.documentElement.style.setProperty('--colorbaseDark','#915e01');
-            document.getElementById("img1").src="imgs/SIC/v2Y.png";
-            document.getElementById("img2").src="imgs/SIC/v2YOP.png";
+            document.getElementById("img1").src="../imgs/SIC/v2Y.png";
+            document.getElementById("img2").src="../imgs/SIC/v2YOP.png";
             break;
 
         case "Green":
             document.documentElement.style.setProperty('--colorbase','#9acd32');
             document.documentElement.style.setProperty('--colorbaseDark','#526f15');
-            document.getElementById("img1").src="imgs/SIC/v2G.png";
-            document.getElementById("img2").src="imgs/SIC/v2GOP.png";
+            document.getElementById("img1").src="../imgs/SIC/v2G.png";
+            document.getElementById("img2").src="../imgs/SIC/v2GOP.png";
             break;
 
         case "Cyan":
             document.documentElement.style.setProperty('--colorbase','#40e0d0');
             document.documentElement.style.setProperty('--colorbaseDark','#18887d');
-            document.getElementById("img1").src="imgs/SIC/v2C.png";
-            document.getElementById("img2").src="imgs/SIC/v2COP.png";
+            document.getElementById("img1").src="../imgs/SIC/v2C.png";
+            document.getElementById("img2").src="../imgs/SIC/v2COP.png";
             break;
 
         case "LightBlue":
             document.documentElement.style.setProperty('--colorbase','#6495ed');
             document.documentElement.style.setProperty('--colorbaseDark','#335695');
-            document.getElementById("img1").src="imgs/SIC/v2LB.png";
-            document.getElementById("img2").src="imgs/SIC/v2LBOP.png";
+            document.getElementById("img1").src="../imgs/SIC/v2LB.png";
+            document.getElementById("img2").src="../imgs/SIC/v2LBOP.png";
             break;
 
         case "Purple":
             document.documentElement.style.setProperty('--colorbase','#9370db');
             document.documentElement.style.setProperty('--colorbaseDark','#54398a');
-            document.getElementById("img1").src="imgs/SIC/v2V.png";
-            document.getElementById("img2").src="imgs/SIC/v2VOP.png";
+            document.getElementById("img1").src="../imgs/SIC/v2V.png";
+            document.getElementById("img2").src="../imgs/SIC/v2VOP.png";
             break;
     }
     
