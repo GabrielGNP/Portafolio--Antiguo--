@@ -388,6 +388,14 @@ function showProyect(nOP){
             "<br><br>";    
             MensNotific(text);
             break;
+        case 1:
+            text = "Este proyecto no tiene una página web."+
+            "<br> Lamento mucho si estaba interesado es la aplicación, debido a que es un proyecto final de carrera y no fue construido únicamente por mi, no puedo distribuir la aplicación ni su código."+
+            "<br><br> Si está interesado en esta Web app, por favor no dude en contactarme."+
+            "<br><br> Gracias y disculpe los inconvenientes."+
+            "<br><br>";    
+            MensNotific(text);
+            break;
     }
 }
 
