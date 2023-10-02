@@ -1,0 +1,209 @@
+:root{
+    --colorbase : #1879f7;
+    --colorbaseDark : #0d438a;
+    --TextColor: #c6c6c6;
+
+    --backgroundLight: #2a2a2a;
+    --background: #202326;
+    --backgroundDark: #1b1c21;
+    --backgroundHebyDark:#131416;
+
+    --alert: orange;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--background);
+    overflow-x: hidden;
+    color: var(--colorbase);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*|  Modificaciones del scrollbar*/
+/*|*/*::-webkit-scrollbar{
+/*|*/    -webkit-appearance: none;
+/*|*/    background: #141619;
+/*|*/}
+/*|*/*::-webkit-scrollbar:vertical {
+/*|*/    width:10px;
+/*|*/}
+/*|*/*::-webkit-scrollbar-button:increment,*::-webkit-scrollbar-button {
+/*|*/   /*display: none;*/
+/*|*/    background-color: rgb(34, 34, 34);
+/*|*/    border: 2px solid #2c2c2c;
+/*|*/} 
+/*|*/
+/*|*/*::-webkit-scrollbar:horizontal {
+/*|*/    height: 10px;
+/*|*/}
+/*|*/
+/*|*/*::-webkit-scrollbar-thumb {
+/*|*/    background-color: rgb(34, 34, 34);
+/*|*/    border-radius: 20px;
+/*|*/    /*border: 2px solid #2c2c2c;*/
+/*|*/    border: 2px solid var(--colorbase);
+/*|*/}
+/*|*/
+/*|*/*::-webkit-scrollbar-track {
+/*|*/    border-radius: 10px;  
+/*|*/}
+/*|*/*::-webkit-scrollbar-corner {
+/*|*/     background-color: rgb(34, 34, 34);
+/*|*/     border: 2px solid #2c2c2c;
+/*|*/}
+
+/*|_________________________________*/
+
+
+
+.changeDarkLight{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 0px;
+    color: #2364ff;
+    font-size: 20px;
+    padding: 0px;
+}
+
+
+
+.title{
+    background: var(--backgroundDark);/*#1b1c21;*/
+
+    border: 1px solid var(--colorbase);
+    box-shadow: 0px 0px 27px var(--colorbase);
+    color: var(--colorbase);
+    margin-top: 10px;
+}
+
+.titles{
+    text-align: center;
+    color: var(--colorbase);
+    font-size: 50px;
+    background: radial-gradient(var(--backgroundHebyDark), transparent,transparent);
+}
+div{
+    color: var(--TextColor);
+}
+
+.divFil{
+    display: flex;
+    background: var(--colorbaseDark );
+    padding: 10px;
+    color: #c6c6c6;
+    /*box-shadow: 0px 0px 5px var(--colorbaseDark ), 
+                0px 0px 10px var(--colorbaseDark ), 
+                0px 0px 15px var(--colorbaseDark ), 
+                0px 0px 20px var(--colorbaseDark ), 
+                0px 0px 25px var(--colorbaseDark ), 
+                0px 0px 30px var(--colorbaseDark ), 
+                0px 0px 35px var(--colorbaseDark ), 
+                0px 0px 40px var(--colorbaseDark );*/
+}
+.DivInternoDivFil{
+    color: #c6c6c6;
+}
+
+#ChecksOPCont{
+    border: 0px solid #141619;
+    display: block;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.LabelOPCont{
+    background: linear-gradient(var(--backgroundLight), var(--background) 60%, var(--backgroundDark));
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 3px solid var(--colorbase);
+    border-bottom: 3px solid var(--colorbaseDark);
+
+    height: 30px;
+    padding: 5px;
+    padding-right: 30px;
+    float: left;
+    margin: 0.5px;
+    width: 31%;
+    text-align: center;
+    
+}
+.LabelOPContCheck{
+    background: linear-gradient(#414547, #303438 60%, #282c30);
+    height: 30px;
+    padding: 5px;
+    padding-right: 30px;
+    float: left;
+    margin: 0.5px;
+    width: 31%;
+    text-align: center;
+    color: var(--SpecialTextColorPalid);
+    text-shadow: 0px 0px 20px cyan;
+    box-shadow: 0px 0px 1px cyan;
+}
+
+.LabelOPCont:hover{
+    color: var(--SpecialTextColorPalid);
+    background: linear-gradient(var(--backgroundLight), var(--backgroundLight) 60%, var(--background));
+}
+
+a{
+    color: var(--colorbase);
+    font-size: 20px;
+}
+Alert{
+    color:var(--alert);
+}
+Danger{
+    color:red;
+}
+item{
+    color:var(--colorbase);
+    font-size: 10px;
+
+}
+
+.SM{
+    transition-duration: 1s;
+    animation-duration: 1s;
+}
+
+.ContCod1{
+    background: var(--Codcolorbase);
+    width: 65%;
+    height: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 3px solid var(--CodcolorLight);
+    border-left: 3px solid var(--CodcolorLight);
+    border-right: 3px solid var(--CodcolorShadow);
+    border-bottom: 3px solid var(--CodcolorShadow);
+}
+
+:root{
+    --Codcolorbase:#190c1d;
+    --CodcolorShadow:#100115;
+    --CodcolorLight:#2c1f34;
+}
+
+.ContCod2{
+    width: 90%;
+    height: 90%;
+    padding: 20px; 
+    text-align: left;
+    background: #010014;
+    color: green;
+    overflow: scroll;
+    border-top: 3px solid var(--CodcolorShadow);
+    border-left: 3px solid var(--CodcolorShadow);
+    border-bottom: 3px solid var(--CodcolorLight);
+    border-right: 3px solid var(--CodcolorLight);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

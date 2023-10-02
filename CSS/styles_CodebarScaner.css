@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+
+    background: #b4b4b4;
+}
+.Header1{
+    position: absolute;
+    width: 85%;
+    background: rgb(19, 39, 68);
+    height: 145px;
+    border-bottom-right-radius: 260px;
+    color: white;
+}
+
+.Bar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    background: rgb(19, 39, 68);
+    height: 145px;
+    border-top-right-radius: 260px;
+    border-bottom-right-radius: 260px;
+    color: white;
+    margin-top: 200px;
+    float: left;
+
+}
+
+.Bar2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    background: rgb(19, 39, 68);
+    height: 145px;
+    border-top-left-radius: 260px;
+    border-bottom-left-radius: 260px;
+    color: white;
+    margin-top: 200px;
+    float: right;
+
+}
+
+.Title{
+    background: transparent;
+
+    font-size: 50px;
+    padding-left: 50px;
+}
+.SubTitle{
+    background: transparent;
+
+    font-size: 25px;
+    padding-left: 50px;
+    color: rgb(209, 209, 209);
+}
